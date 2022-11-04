@@ -1,0 +1,199 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 10vh;
+    background: linear-gradient(to right,#18a0d6,#0e7d99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Entrada{
+    width: 450px;
+    background: rgba(255,255,255,.5);
+    padding: 4rem;
+    border-radius: 12px;
+    position: relative;
+}
+
+.Entrada::before{
+    content: "" ;
+    position: absolute;
+    background: rgba(255,255,255,.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+} 
+
+.logo{
+    margin-bottom: 4rem;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.logo, .header, .footer{
+    text-align: center;
+}
+
+.Entrada a{
+    text-decoration: none;
+    color: #35339a;
+}
+
+.Entrada a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    margin-bottom: 2rem;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.header h1 + div{
+    font-size: calc(1rem* .8);
+    opacity: .8;
+}
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.loginform .formitens{
+    position: relative;
+}
+
+.loginform .formitens .ma{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size:  1.3rem;
+    opacity: .4;
+}
+
+.loginform .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.loginform .formitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.footer{
+    margin-top: 1.5rem;
+    font-size:calc(1rem * .8);
+}
+
+.loginform input[type="text"],
+.loginform input[type="password"],
+.loginform input[type="email"] {
+    border: none;
+    outline: none;
+    background:  rgba(255,255,255,.3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 80%;
+    transition: .5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.Entrada input:focus{
+    background: white;
+}
+
+.Entrada input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(82, 163, 218);
+}
+
+
+.social-media .outras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: top 2px;
+}
+
+.socialmedia a img{
+    width: 20px;
+    height: 20px;
+}
+
+.socialmedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 35px;
+    height: 35px;
+    background: whitesmoke;
+    border-radius: 100px;
+    transition: all .5s;
+    gap: 1rem;
+}
+
+.socialmedia a:hover{
+   background: white;
+   transform: scale(1.1);
+}
+
+.loginform button{
+    background: rgb(82, 163, 218);
+    color: rgb(12, 7, 7);
+    padding: 1rem;
+    border-radius: 250px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: backgroud .5s;
+    font-family: "Poppins";
+    font-size: larger;
+    border: none;
+}
+
+.loginform button:hover{
+    background:linear-gradient(to right,#333399,#00e1ff);
+    cursor:pointer
+}
+
+@media (max-width:768px) {
+    
+    body{
+        padding: 2rem 0;
+    }
+
+    .Entrada{
+        width: 300px;
+        padding: 2rem;
+    }
+        
+}
